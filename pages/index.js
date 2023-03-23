@@ -11,7 +11,7 @@ export default function Home(props) {
   return (
     <div>
       <Head>
-        <title>Karthik's AirBnB</title>
+        <title>Karthiks AirBnB</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
