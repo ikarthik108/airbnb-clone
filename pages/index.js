@@ -8,14 +8,12 @@ import Head from "next/head";
 
 export default function Home(props) {
   const { exploreData } = props;
-  console.log("ex data", exploreData);
   return (
     <div>
       <Head>
         <title>Karthik's AirBnB</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
       <Banner />
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
@@ -60,7 +58,6 @@ export async function getStaticProps() {
   const exploreData = await fetch(
     "https://mocki.io/v1/4ab86696-ba66-4acb-a501-9a473f89aeb8"
   ).then((res) => res.json());
-  console.log("explore data", exploreData);
 
   return {
     props: {

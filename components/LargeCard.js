@@ -6,6 +6,7 @@ function LargeCard({ img, desc, title, buttonText }) {
       <div className="relative h-96 min-w-[300px]">
         <Image
           src={img}
+          alt=""
           layout="fill"
           objectFit="cover"
           className="rounded-2xl"
